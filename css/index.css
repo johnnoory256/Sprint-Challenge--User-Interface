@@ -70,7 +70,35 @@ p {
     width: 800px;
     margin: 0 auto;
 }
-
+.lambda-logo {
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+}
+.nav-bar {
+    width: 100%;
+}
+.list-menu {
+    display: flex;
+    justify-content: space-around;
+}
+.list-item {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    
+}
+.list-item a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.4s ease-in-out;
+}
+.list-item a:hover {
+    background: black;
+    color: white;
+    padding: 0 .5rem;
+}
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -94,14 +122,14 @@ p {
     padding: 0 2%;
     margin-bottom: 0;
 }
-
-.middle-content .boxes {
+ /***removed specificity .middle-content from boxes***/
+.boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
-.middle-content .boxes .box {
+ /***removed specificity ..middle-content .boxes from box***/
+.box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -111,6 +139,17 @@ p {
     align-items: center;
     justify-content: center;
 }
+/*---home page  boxes background-color ---*/
+.box-1 { background-color: teal; }
+.box-2 { background-color: gold; }
+.box-3 { background-color: cadetblue; }
+.box-4 { background-color: coral; }
+.box-5 { background-color: crimson; }
+.box-6 { background-color: forestgreen; }
+.box-7 { background-color: darkorchid; }
+.box-8 { background-color: hotpink; }
+.box-9 { background-color: indigo; }
+.box-10 { background-color: dodgerblue; }
 
 .bottom-content {
     display: flex;
@@ -118,11 +157,11 @@ p {
     justify-content: space-around;
 }
 
-.bottom-content .text-container {
+.text-container {
     padding-right: 4%;
 }
 
-.bottom-content .text-container:last-child {
+.text-container:last-child {
     padding-right: 0;
 }
 
@@ -144,3 +183,125 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/************** About page Styling starts here *************/
+
+.jumbo-about {
+    margin: 15px 0 10px 0;
+}
+.about-main {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted;
+}
+.item-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item {
+    width: 48%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.item-containers .item p {
+    margin: 20px 0;
+}
+.item-content {
+    margin: 15px 0;
+}
+.learn-btn {
+    background-color: #fff;
+    outline: none;
+    border: 2px solid;
+    padding: 0.5rem 1.5rem;
+    border-radius: .6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+}
+.learn-btn:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+hr {
+    border-top: 0;
+    border-bottom: 1px dashed;
+    margin-top: 1.5rem;
+}
+.about-end {
+    margin: 1rem;
+}
+footer {
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+/************* Contact page styling starts here ************/
+
+
+  body {
+    background-color: #ddd;
+  }
+  
+  .contact-title {
+      margin: 4rem;
+      font-size: 3rem;
+      text-align: center;
+      
+  }
+  .contact-form {
+    display:flex;
+    max-width:50rem;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.8);
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 2rem rgba(0,0,0, .7);
+  }
+  
+  .input-fields {
+    display:flex;
+    flex-direction: column;
+    margin-right: 10%;
+    
+  }
+    
+  .input-fields,
+  .msg {
+    width: 50%;
+  }
+  .input:focus,
+  .msg textarea {
+      outline: none;
+  }
+  .input-fields .input,
+  .msg textarea{
+    margin: 1rem 0;
+    background:transparent;
+    border: none;
+    border-bottom: 2px solid #c5ecfd;
+    width: 100%;
+    color: #c5ecfd;
+    font-size: 1.2rem;
+    }
+  
+  .btn {
+    background: #39b7dd;
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: all .5s ease-out;
+    }
+  .btn:hover {
+   background: #39b7ff;
+  }
+  ::placeholder {
+      color: white;
+      font-size: 1.1rem;
+     
+  }
